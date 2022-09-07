@@ -1,0 +1,84 @@
+.Navbar {
+
+    z-index: 10;
+
+    width: 8%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    margin: 32px 0px 0px 0px;
+    font-size: 0.75rem;
+
+    height: auto;
+}
+
+.SocialMediaIcons {
+    transform: scale(0.85);
+}
+
+.DownloadCV {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+}
+
+.SocialMedia {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SocialMedia > * {
+    margin-left: 16px;
+}
+
+
+.HamburgerMenu {
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.Line { 
+
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0 3px 0;
+
+}
+
+@media screen and (min-width: 1020px) {
+
+    .Navbar {
+        width: 90%;
+        margin-top: 72px;
+
+        height: auto;
+        /* background-color: rebeccapurple; */
+    }
+
+    .SocialMedia > * {
+        margin-left: 32px;
+    }
+
+    /* .Line {
+        width: 32px;
+        height: 3px;
+        background-color: black;
+        margin: 2px 2px 2px 2px;
+    } */
+
+}
