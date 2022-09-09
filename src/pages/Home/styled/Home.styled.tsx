@@ -5,7 +5,7 @@ import Page from 'components/containers/styled/Page.styled'
 
 const _Home = styled(Page)`
 
-  background-image: url("${BgHome}");
+  background-image: url(${BgHome});
   background-size: cover;
   background-repeat: no-repeat;
   

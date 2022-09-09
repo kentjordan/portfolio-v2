@@ -17,21 +17,40 @@ import _Home from './styled/Home.styled';
 import { useState } from 'react';
 
 import { SwitchNavContext } from './contexts/Home.context'
+import { SyncLoader } from 'react-spinners'
 
 const Home = () => {
 
   const switchNav = useState<any>(false);
 
+  const [spinnerVisibility, updateSpinnerVisibility] = useState(true);
+  const [count, setCount] = useState(3);
+
+
+  if (count >= 0) {
+    setTimeout(() => {
+
+      setCount(count - 1);
+
+      if (count === 1) {
+        updateSpinnerVisibility(false);
+      }
+
+    }, 1000)
+  }
+
   return (
+
+
     <_Home>
 
-      <PageMainContent>
+      {spinnerVisibility ? <SyncLoader /> : <PageMainContent>
 
-        <SwitchNavContext.Provider value={{switchNav}}>
+        <SwitchNavContext.Provider value={{ switchNav }}>
 
           <Navbar />
 
-          <div className='HomeContentGrid'>     
+          <div className='HomeContentGrid'>
 
             <NavMenu />
             <Rectangle />
@@ -45,9 +64,10 @@ const Home = () => {
 
         </SwitchNavContext.Provider>
 
-      </PageMainContent>
+      </PageMainContent>}
 
     </_Home>
+
   )
 
 }
