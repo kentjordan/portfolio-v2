@@ -7,6 +7,6 @@ export const TransNavbar = {
     ease: 'anticipate'
 }
 export const InitNavbar = {
-    width: '200vw',
+    width: '300vw',
 }
 
