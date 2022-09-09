@@ -8,6 +8,12 @@ const _Home = styled(Page)`
   background-image: url(${BgHome});
   background-size: cover;
   background-repeat: no-repeat;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
   
 `
 export default _Home;
