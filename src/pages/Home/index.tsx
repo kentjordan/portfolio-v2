@@ -60,7 +60,7 @@ const Home = () => {
 
           <GradientRect />
 
-          <motion.img animate={{ x: 0 }} transition={{ ease: 'anticipate', delay: 1.5 }} initial={{ x: 1200 }} src={ImgMe} alt="Me" className='ImgMe' />
+          <motion.img animate={{ x: 0 }} transition={{ ease: 'anticipate', delay: 2 }} initial={{ x: 1200 }} src={ImgMe} alt="Me" className='ImgMe' />
 
         </SwitchNavContext.Provider>
 
