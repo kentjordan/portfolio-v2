@@ -26,7 +26,6 @@ const Home = () => {
   const [spinnerVisibility, updateSpinnerVisibility] = useState(true);
   const [count, setCount] = useState(3);
 
-
   if (count >= 0) {
     setTimeout(() => {
 
